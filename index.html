@@ -3,30 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Nombres </title>
+    <title>Lista de Nombres Estática</title>
     <style>
-        /* Estilos originales del documento proporcionado */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; color: #333; margin: 0; padding: 20px; text-align: center; }
-        .container { max-width: 600px; margin: 50px auto; background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
-        h1 { color: #4a90e2; margin-bottom: 20px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
-        ul { padding: 0; }
-        li { list-style-type: none; background-color: #e6f0ff; border: 1px solid #c9e2ff; margin-bottom: 8px; padding: 12px; border-radius: 5px; text-align: left; transition: background-color 0.3s; }
-        li:hover { background-color: #b3d9ff; }
+        /* --- ESTILO ROSITA PARA BRITHANY --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff0f5; /* Fondo Lavanda Rosado */
+            color: #5a3a4a;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4); /* Sombra Rosa */
+            border: 3px solid #ffb6c1; /* Borde rosa pastel */
+        }
+        h1 {
+            color: #d63384; /* Rosa Fuerte */
+            margin-bottom: 20px;
+            border-bottom: 2px dashed #ff8da1;
+            padding-bottom: 10px;
+        }
+        ul {
+            padding: 0;
+        }
+        li {
+            list-style-type: none;
+            background-color: #ffeef8; /* Fondo de lista rosita claro */
+            border: 1px solid #ffc2d1;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: left;
+            transition: transform 0.2s, background-color 0.3s;
+            font-weight: 500;
+        }
+        li:hover {
+            background-color: #ff80ab; /* Al pasar el mouse se pone rosa intenso */
+            color: white;
+            transform: scale(1.02); /* Efecto pop-up pequeño */
+            cursor: heart;
+        }
+        /* Texto obligatorio de la práctica */
+        .version-info {
+            background-color: #e3f2fd;
+            border-left: 5px solid #2196f3;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: left;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Lista de Estudiantes - Equipo Brithany Mendoza</h1>
+        <h1>💖 Equipo Brithany 💖</h1>
         
         <ul id="listaDeNombres">
-            <li>Brithany Mendoza</li>
-             <li>Daniela Martínez</li>
-              <li>Nahomy Mares</li>
+            <li> Brithany Mendoza</li>
+            <li> Daniela Martinez </li>
+            <li> Nahomy Mares</li>
+           
+            
         </ul>
 
-        <p>Esta es la <strong>Versión 1.0</strong>. El despliegue automático aún no se ha probado.</p>
+        <p>Esta es la <strong>Versión 2.0</strong>. El despliegue automático <strong>se ha activado</strong> y ahora vamos a verificarlo.</p>
         
-        <p id="contador"></p>
+        <p id="contador" style="color: #d63384; font-weight: bold; margin-top: 15px;"></p>
     </div>
 
     <script>
@@ -34,8 +82,7 @@
             const lista = document.getElementById('listaDeNombres');
             const items = lista.getElementsByTagName('li');
             const contadorElemento = document.getElementById('contador');
-            // Cuenta los nombres automáticamente
-            contadorElemento.textContent = `Total de nombres en la lista: ${items.length}`;
+            contadorElemento.textContent = `Total de integrantes: ${items.length}`;
         });
     </script>
 </body>
